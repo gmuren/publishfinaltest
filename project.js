@@ -74,7 +74,7 @@ $(document).ready(function() {
                     if (precipToday > 30) {
                         $("#accessoryimage").attr("src", "https://maxcdn.icons8.com/Share/icon/Clothing//umbrella1600.png");
                     } else if (highToday > 80) {
-                        $("#accessoryimage").attr("src", "https://image.freepik.com/free-icon/sandals_318-62996.jpg");
+                        $("#accessoryimage").attr("src", "https://cdn4.iconfinder.com/data/icons/clothicons/512/013-Sandals-256.png");
                     } else {
                         $("#accessoryimage").attr("src", "https://image.flaticon.com/icons/png/512/24/24936.png");
                     }
