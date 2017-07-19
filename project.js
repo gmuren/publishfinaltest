@@ -40,45 +40,45 @@ $(document).ready(function() {
                 precipToday = data.DailyForecasts[0].Day.PrecipitationProbability;
 
                 // Set Rules for Head
-                $("button").on("click", function() {
+                // $("button").on("click", function() {
                     if (highToday > 85) {
                         $("#headimage").attr("src", "https://d30y9cdsu7xlg0.cloudfront.net/png/32677-200.png");
                     } else if (highToday < 65) {
                         $("#headimage").attr("src", "https://www.shareicon.net/download/2016/11/16/854595_christmas_512x512.png");
                     } else {
                         $("#headimage").attr("src", "https://cdn0.iconfinder.com/data/icons/users-android-l-lollipop-icon-pack/24/user-256.png");
-                    }
-                });
+                    };
+                // });
                 // Set Rules for Torso
-                $("button").on("click", function() {
+                // $("button").on("click", function() {
                     if (highToday > 85) {
                         $("#torsoimage").attr("src", "https://cdn4.iconfinder.com/data/icons/clothes-accessories-2/367/clothes-accessory-clothing-garment_08-256.png");
                     } else if (highToday < 65) {
                         $("#torsoimage").attr("src", "https://cdn1.iconfinder.com/data/icons/clothes-the-icons/32/coat-512.png");
                     } else {
                         $("#torsoimage").attr("src", "https://cdn4.iconfinder.com/data/icons/male-shirts-add-on/48/v-17-512.png");
-                    }
-                });
+                    };
+                // });
                 // Set Rules for Legs		
-                $("button").on("click", function() {
+                // $("button").on("click", function() {
                     if (highToday > 85) {
                         $("#legsimage").attr("src", "https://cdn0.iconfinder.com/data/icons/thin-clothing/24/thin-0990_short_pants_shorts_bermudas-512.png");
                     } else if (highToday < 65) {
                         $("#legsimage").attr("src", "https://www.shareicon.net/download/2016/03/12/732919_clothing_512x512.png");
                     } else {
                         $("#legsimage").attr("src", "https://cdn0.iconfinder.com/data/icons/thin-clothing/24/thin-0991_pants-512.png");
-                    }
-                });
+                    };
+                // });
                 // Set Rules for Accessories		
-                $("button").on("click", function() {
+                // $("button").on("click", function() {
                     if (precipToday > 30) {
                         $("#accessoryimage").attr("src", "https://maxcdn.icons8.com/Share/icon/Clothing//umbrella1600.png");
                     } else if (highToday > 80) {
                         $("#accessoryimage").attr("src", "https://cdn4.iconfinder.com/data/icons/clothicons/512/013-Sandals-256.png");
                     } else {
                         $("#accessoryimage").attr("src", "https://image.flaticon.com/icons/png/512/24/24936.png");
-                    }
-                });
+                    };
+                // });
 
                 console.log(highToday);
                 console.log(lowToday);
