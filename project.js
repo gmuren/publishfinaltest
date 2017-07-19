@@ -25,14 +25,14 @@ $(document).ready(function() {
         console.log(zipcode);
 
         // 1st API call returns AccuWeather location object response based on user zipcode; sets locationKeyURL variable
-        var locationKeyUrl = "https://dataservice.accuweather.com/locations/v1/postalcodes/search?apikey=Z9uzOq32Xjyemqmo7N3zxPSfTeyYa8R8&q=" + zipcode;
+        var locationKeyUrl = "https://dataservice.accuweather.com/locations/v1/postalcodes/search?apikey=tOVMbQyaHspFKcQVLGhRdx1Af0VwV6e7&q=" + zipcode;
 
         $.getJSON(locationKeyUrl, function(data) {
 
             locationKey = data[0].Key; // Grabs locationKey from Accuweather
             console.log(locationKey);
             // 2nd API call grabs local daily forecast based on Accuweather locationKey
-            var weatherForecastUrl = "https://dataservice.accuweather.com/forecasts/v1/daily/1day/" + locationKey + "?apikey=Z9uzOq32Xjyemqmo7N3zxPSfTeyYa8R8&details=true&metric=false";
+            var weatherForecastUrl = "https://dataservice.accuweather.com/forecasts/v1/daily/1day/" + locationKey + "?apikey=tOVMbQyaHspFKcQVLGhRdx1Af0VwV6e7&details=true&metric=false";
             $.getJSON(weatherForecastUrl, function(data) {
                 // Set weather variables based on real feel and chance of precipitation
                 highToday = data.DailyForecasts[0].RealFeelTemperature.Maximum.Value;
